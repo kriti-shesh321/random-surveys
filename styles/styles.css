@@ -266,15 +266,24 @@ h1 {
   border: solid 3px;
   border-radius: 25px;
   border-color: black;
-  padding: 50px;
   background-image: url("../assets/anime-home.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.88;
   color: white;
-  width: 20%;
-  height: 10vh;
+  width: 25%;
+  height: 20vh;
+  text-align: center;
+}
+
+.anime-survey h2{
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 15px;
+  padding: 2% 15px;
   text-align: center;
 }
 
@@ -282,22 +291,24 @@ h1 {
   border: solid 3px;
   border-radius: 25px;
   border-color: black;
-  padding: 50px;
   background-image: url("../assets/linux-home.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.88;
   color: white;
-  width: 20%;
-  height: 10vh;
+  width: 25%;
+  height: 20vh;
 }
 
 .linux-survey h2 {
   color: black;
-  background-color: lightblue;
+  background-color: rgba(255,255,255,0.9);
   border-radius: 15px;
-  padding: 1% 0;
+  padding: 2% 15px;
   text-align: center;
 }
 
@@ -309,21 +320,24 @@ h1 {
   border: solid 3px;
   border-radius: 25px;
   border-color: black;
-  padding: 50px;
   background-image: url("../assets/food-bg-home.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.9;
-  color: black;
-  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.88;
+  color: white;
+  width: 25%;
+  height: 20vh;
   margin-right: 3%;
-  height: 10vh;
 }
 
 .food-survey h2 {
-  background-color: peachpuff;
-  padding: 1% 0;
+  color: black;
+  background-color: rgba(255,229,180,0.9);
+  padding: 2% 15px;
   border-radius: 15px;
   text-align: center;
 }
@@ -332,21 +346,24 @@ h1 {
   border: solid 3px;
   border-radius: 25px;
   border-color: black;
-  padding: 50px;
   background-image: url("../assets/books-home.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.9;
-  color: black;
-  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.88;
+  color: white;
+  width: 25%;
+  height: 20vh;
   margin-left: 3%;
-  height: 10vh;
 }
 
 .books-survey h2 {
-  background-color: peachpuff;
-  padding: 1% 0;
+  color: black;
+  background-color: rgba(255,229,180,0.9);
+  padding: 2% 15px;
   border-radius: 15px;
   text-align: center;
 }
@@ -355,21 +372,24 @@ h1 {
   border: solid 3px;
   border-radius: 25px;
   border-color: black;
-  padding: 50px;
   background-image: url(../assets/yoga-bg-home.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.88;
   color: white;
-  width: 20%;
-  height: 10vh;
+  width: 25%;
+  height: 20vh;
   text-align: center;
 }
 
 .yoga-survey h2 {
-  background-color: #ED8E7C;
-  padding: 1% 0;
+  color: black;
+  background-color: rgba(255,153,51,0.9);
+  padding: 2% 15px;
   border-radius: 15px;
   text-align: center;
 }
@@ -719,7 +739,6 @@ h1 {
   .row2 .linux-survey, .row3 .books-survey {
     align-self: center;
   }
-
 
   .body-footer {
     height: 620px;
