@@ -448,7 +448,7 @@ h1 {
 }
 
 /* Tablets */
-@media(max-width: 768px) {
+@media(max-width: 800px) {
   body {
     line-height: normal;
   }
