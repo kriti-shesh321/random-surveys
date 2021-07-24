@@ -280,8 +280,8 @@ h1 {
   text-align: center;
 }
 
-.anime-survey h2{
-  background-color: rgba(0,0,0,0.5);
+.anime-survey h2 {
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   padding: 2% 15px;
   text-align: center;
@@ -306,7 +306,7 @@ h1 {
 
 .linux-survey h2 {
   color: black;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   padding: 2% 15px;
   text-align: center;
@@ -336,7 +336,7 @@ h1 {
 
 .food-survey h2 {
   color: black;
-  background-color: rgba(255,229,180,0.9);
+  background-color: rgba(255, 229, 180, 0.9);
   padding: 2% 15px;
   border-radius: 15px;
   text-align: center;
@@ -362,7 +362,7 @@ h1 {
 
 .books-survey h2 {
   color: black;
-  background-color: rgba(255,229,180,0.9);
+  background-color: rgba(255, 229, 180, 0.9);
   padding: 2% 15px;
   border-radius: 15px;
   text-align: center;
@@ -388,7 +388,7 @@ h1 {
 
 .yoga-survey h2 {
   color: black;
-  background-color: rgba(255,153,51,0.9);
+  background-color: rgba(255, 153, 51, 0.9);
   padding: 2% 15px;
   border-radius: 15px;
   text-align: center;
@@ -512,7 +512,7 @@ h1 {
   .survey-bubble {
     display: inline-block;
     float: right;
-    width: 300px;
+    width: 45%;
     height: auto;
     background-color: #FFDF91;
     border: 8px solid #666;
@@ -549,7 +549,7 @@ h1 {
   }
 
   .anime-survey, .yoga-survey, .linux-survey, .food-survey, .books-survey {
-    width: 45%;
+    width: 50%;
     margin: 2% 3%;
   }
 
@@ -678,7 +678,7 @@ h1 {
 
   .survey-bubble {
     display: inline-block;
-    width: 200px;
+    width: 50%;
     height: auto;
     background-color: #FFDF91;
     border: 8px solid #666;
@@ -712,7 +712,7 @@ h1 {
   }
 
   .mid-text {
-    font-size: 170%;
+    font-size: 150%;
     margin-top: 17%;
     margin-bottom: 3%;
   }
@@ -723,9 +723,18 @@ h1 {
   }
 
   .anime-survey, .yoga-survey, .linux-survey, .food-survey, .books-survey {
-    width: 60%;
+    width: 70%;
     margin: 2% 3%;
-    height: 5vh;
+    height: 140px;
+  }
+
+  .mid h2 {
+    padding: 2% 5px;
+  }
+
+  .books-survey h2 {
+    padding: 2% 2px;
+    margin-left: 0;
   }
 
   .row1 {
