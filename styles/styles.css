@@ -1,0 +1,765 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  text-align: left;
+  font-family: "cabin", sans-serif;
+  line-height: 1.6;
+  background-color: #5A92F7;
+}
+
+p {
+  margin: 10px 0;
+}
+
+h1 {
+  font-family: "Lobster Two", sans-serif;
+  color: white;
+  font-size: 400%;
+}
+
+.top {
+  padding: 3% 5% 5% 2%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  position: relative;
+}
+
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 10%;
+}
+
+.navBar {
+  margin-bottom: 10%;
+  align-items: center;
+  display: flex;
+  width: 29%;
+  justify-content: space-evenly;
+  font-size: 150%;
+}
+
+.dropdown {
+  overflow: hidden;
+  border: solid 2px;
+  border-radius: 20px;
+  padding: 2px 5px;
+  margin: 10px;
+  color: black;
+  background-color: blanchedalmond;
+  text-decoration: none;
+  height: 40px;
+  width: 200px;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  padding: 2px 5px;
+  background-color: blanchedalmond;
+  margin: 0;
+  font-size: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: blanchedalmond;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 90%;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 2% 2%;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  margin: 0;
+  border-radius: 15px;
+  padding: 2px 5px;
+}
+
+.help {
+  border: solid 2px;
+  border-radius: 20px;
+  padding: 1px 5%;
+  margin: 2px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  background-color: blanchedalmond;
+  color: black;
+  user-select: none;
+}
+
+.help .help-popup {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  margin-bottom: 1px;
+  visibility: hidden;
+  text-align: center;
+  border: solid 1px;
+  border-radius: 10px;
+  border-color: #402218;
+  padding: 10px;
+  z-index: 1;
+}
+
+.help .help-popup::after {
+  content: "";
+  position: absolute;
+}
+
+.help .show {
+  visibility: visible;
+  position: absolute;
+  top: 200%;
+  background-color: #D6D2C4;
+}
+
+.survey-explain {
+  display: inline-block;
+  margin: 3%;
+  margin-right: 25%;
+  margin-top: 10%;
+  z-index: 1;
+  position: relative;
+}
+
+.survey-explain img {
+  height: 65vh;
+  display: inline-block;
+  position: absolute;
+  left: 14%;
+}
+
+.survey-bubble {
+  display: inline-block;
+  float: right;
+  position: relative;
+  width: 30%;
+  height: auto;
+  background-color: blanchedalmond;
+  border: 8px solid #666;
+}
+
+.round {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+}
+
+.tri-right.border.btm-left-in:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  right: auto;
+  top: auto;
+  bottom: -40px;
+  border: 20px solid;
+  border-color: #666 transparent transparent #666;
+}
+
+.tri-right.btm-left-in:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 38px;
+  right: auto;
+  top: auto;
+  bottom: -20px;
+  border: 12px solid;
+  border-color: blanchedalmond transparent transparent blanchedalmond;
+}
+
+/* survey-bubble contents */
+.talktext {
+  padding: 1em;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 160%;
+  font-family: "Benne", serif;
+}
+
+.top::before, .top::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -50px;
+  right: 0;
+  left: 0;
+  background-color: #5A92F7;
+  transform: skewY(3deg);
+}
+
+.mid {
+  font-family: "cabin", sans-serif;
+  box-shadow: 0 10px 146px 54px rgba(0, 0, 0, 0.49);
+  height: 95vh;
+  background-color: white;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+}
+
+.mid-text {
+  display: block;
+  text-align: center;
+  font-size: 300%;
+  text-shadow: 3px 1px lightblue;
+}
+
+.mid a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.mid a:hover {
+  text-decoration: underline;
+}
+
+.row1 {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin-top: 4%;
+}
+
+.row2 {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.row3 {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  padding-bottom: 2%;
+}
+
+.anime-survey {
+  border: solid 3px;
+  border-radius: 25px;
+  border-color: black;
+  padding: 50px;
+  background-image: url("../assets/anime-home.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.9;
+  color: white;
+  width: 20%;
+  height: 10vh;
+  text-align: center;
+}
+
+.linux-survey {
+  border: solid 3px;
+  border-radius: 25px;
+  border-color: black;
+  padding: 50px;
+  background-image: url("../assets/linux-home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.9;
+  color: white;
+  width: 20%;
+  height: 10vh;
+}
+
+.linux-survey h2 {
+  color: black;
+  background-color: lightblue;
+  border-radius: 15px;
+  padding: 1% 0;
+  text-align: center;
+}
+
+.linux-survey>a:hover {
+  text-decoration: underline;
+}
+
+.food-survey {
+  border: solid 3px;
+  border-radius: 25px;
+  border-color: black;
+  padding: 50px;
+  background-image: url("../assets/food-bg-home.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.9;
+  color: black;
+  width: 20%;
+  margin-right: 3%;
+  height: 10vh;
+}
+
+.food-survey h2 {
+  background-color: peachpuff;
+  padding: 1% 0;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.books-survey {
+  border: solid 3px;
+  border-radius: 25px;
+  border-color: black;
+  padding: 50px;
+  background-image: url("../assets/books-home.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.9;
+  color: black;
+  width: 20%;
+  margin-left: 3%;
+  height: 10vh;
+}
+
+.books-survey h2 {
+  background-color: peachpuff;
+  padding: 1% 0;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.yoga-survey {
+  border: solid 3px;
+  border-radius: 25px;
+  border-color: black;
+  padding: 50px;
+  background-image: url(../assets/yoga-bg-home.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.9;
+  color: white;
+  width: 20%;
+  height: 10vh;
+  text-align: center;
+}
+
+.yoga-survey h2 {
+  background-color: #ED8E7C;
+  padding: 1% 0;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.body-footer {
+  font-family: "Benne", sans-serif;
+  margin: 1% 0 1% 0;
+  text-align: left;
+  height: 40vh;
+  position: relative;
+  font-size: 170%;
+}
+
+.footer-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  height: 50%;
+  padding-top: 3%;
+}
+
+.footer-column>ul>li {
+  list-style-type: none;
+  padding-top: 5%;
+}
+
+.body-footer a {
+  text-decoration: none;
+  color: #162252;
+}
+
+.body-footer a:visited {
+  color: #0A1931;
+  text-decoration: none;
+}
+
+.body-footer a:hover {
+  color: #EDEDED;
+  text-decoration: underline;
+}
+
+.footer-column {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+  width: 100%;
+  font-size: 90%;
+  line-height: normal;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Tablets */
+@media(max-width: 768px) {
+  body {
+    line-height: normal;
+  }
+
+  h1 {
+    margin: 10px;
+  }
+
+  .top {
+    height: 700px;
+  }
+
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+  }
+
+  .navBar {
+    font-size: 125%;
+    width: auto;
+    display: flex;
+    margin-top: 5%;
+    padding: 3%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .navBar .dropdown {
+    margin: 0 20px 0 0;
+    padding: 5px 2px 3px 2px;
+    text-align: center;
+    height: 30px;
+  }
+
+  .navBar .help {
+    margin: 0 0 0 20px;
+    padding: 5px 8px 3px 8px;
+    text-align: center;
+    height: 30px;
+  }
+
+  .survey-explain {
+    margin: 0;
+    z-index: 1;
+    position: relative;
+    top: 320px;
+  }
+
+  .survey-explain img {
+    height: 400px;
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+
+  .survey-bubble {
+    display: inline-block;
+    float: right;
+    width: 300px;
+    height: auto;
+    background-color: #FFDF91;
+    border: 8px solid #666;
+  }
+
+  .talktext {
+    padding: 2% 4%;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 122%;
+    font-family: "Benne", serif;
+  }
+
+  .top::before, .top::after {
+    content: "";
+    position: absolute;
+    height: 70px;
+    bottom: -40px;
+    right: 0;
+    left: 0;
+    background-color: #5A92F7;
+    transform: skewY(4deg);
+  }
+
+  .mid {
+    height: auto;
+    padding-bottom: 5%;
+  }
+
+  .mid-text {
+    font-size: 200%;
+    margin-top: 17%;
+    margin-bottom: 3%;
+  }
+
+  .anime-survey, .yoga-survey, .linux-survey, .food-survey, .books-survey {
+    width: 45%;
+    margin: 2% 3%;
+  }
+
+  .mid .row2, .mid .row3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row1 {
+    justify-content: flex-start;
+  }
+
+  .row2 .yoga-survey, .row3 .food-survey {
+    align-self: flex-end;
+  }
+
+  .row2 .linux-survey, .row3 .books-survey {
+    align-self: flex-start;
+  }
+
+  .body-footer {
+    height: 620px;
+  }
+
+  .footer-layout {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    align-content: center;
+    padding-top: 3%;
+    height: auto;
+  }
+
+  .footer-layout .fl1 {
+    grid-row: 1/1;
+    margin: auto;
+    padding: 3% 0;
+  }
+
+  .footer-layout .fl2 {
+    grid-row: 2/2;
+    margin: auto;
+    padding: 3% 0;
+  }
+
+  .footer-layout .fl3 {
+    grid-row: 3/3;
+    grid-column: 1/1;
+    margin: auto;
+    padding: 3% 0;
+  }
+
+  .body-footer p {
+    text-align: center;
+  }
+
+  .copyright {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 8px 0 5px 0;
+  }
+}
+
+/* Mobile */
+@media(max-width: 480px) {
+  body {
+    line-height: normal;
+  }
+
+  h1 {
+    font-size: 300%;
+    margin: 5px;
+  }
+
+  .top {
+    height: 530px;
+  }
+
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navBar {
+    font-size: 125%;
+    width: auto;
+    display: flex;
+    margin-top: 5%;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .navBar .dropdown {
+    margin: 0 20px 0 0;
+    padding: 1px 1px 2px 1px;
+    text-align: center;
+    height: 30px;
+  }
+
+  .navBar .help {
+    margin: 0 0 0 20px;
+    padding: 3px 8px 1px 8px;
+    text-align: center;
+    height: 30px;
+  }
+
+  .survey-explain {
+    margin: 0;
+    z-index: 1;
+    position: relative;
+    top: 270px;
+    height: 400px;
+    margin-top:
+  }
+
+  .survey-explain img {
+    height: 270px;
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 5%;
+  }
+
+  .survey-bubble {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    background-color: #FFDF91;
+    border: 8px solid #666;
+    position: absolute;
+    top: -50px;
+    right: 0;
+  }
+
+  .talktext {
+    padding: 2% 4%;
+    text-align: justify;
+    line-height: normal;
+    font-size: 100%;
+    font-family: "Benne", serif;
+  }
+
+  .top::before, .top::after {
+    content: "";
+    position: absolute;
+    height: 50px;
+    bottom: -30px;
+    right: 0;
+    left: 0;
+    background-color: #5A92F7;
+    transform: skewY(5deg);
+  }
+
+  .mid {
+    height: auto;
+    padding-bottom: 5%;
+  }
+
+  .mid-text {
+    font-size: 170%;
+    margin-top: 17%;
+    margin-bottom: 3%;
+  }
+
+  .mid .row2, .mid .row3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .anime-survey, .yoga-survey, .linux-survey, .food-survey, .books-survey {
+    width: 60%;
+    margin: 2% 3%;
+    height: 5vh;
+  }
+
+  .row1 {
+    justify-content: center;
+  }
+
+  .row2 .yoga-survey, .row3 .food-survey {
+    align-self: center;
+  }
+
+  .row2 .linux-survey, .row3 .books-survey {
+    align-self: center;
+  }
+
+
+  .body-footer {
+    height: 620px;
+  }
+
+  .footer-layout {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    align-content: center;
+    padding-top: 5%;
+    height: auto;
+  }
+
+  .footer-layout .fl1 {
+    grid-row: 1/1;
+    margin: auto;
+    padding: 5% 0;
+  }
+
+  .footer-layout .fl2 {
+    grid-row: 2/2;
+    margin: auto;
+    padding: 5% 0;
+  }
+
+  .footer-layout .fl3 {
+    grid-row: 3/3;
+    grid-column: 1/1;
+    margin: auto;
+    padding: 5% 0;
+  }
+
+  .body-footer p {
+    text-align: center;
+  }
+
+  .copyright {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 8px 0 0 0;
+    margin-bottom: 0;
+  }
+}

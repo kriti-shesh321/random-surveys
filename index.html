@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Random Surveys</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Benne&family=Cabin:wght@900&family=Leckerli+One&family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="top">
+    <div class="top-content">
+      <div>
+        <h1><u>Random Surveys</u></h1>
+      </div>
+      <div class="navBar">
+        <div class="dropdown">
+          <button class="dropbtn">Answer Survey
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="markup/anime-survey.html" target="_blank">Anime & manga</a>
+            <a href="markup/linux-survey.html" target="_blank">For linux users</a>
+            <a href="markup/books-survey.html" target="_blank">About Books</a>
+            <a href="markup/food-survey.html" target="_blank">Food & Lifestyle</a>
+            <a href="markup/yoga-survey.html" target="_blank">Yoga & meditation</a>
+          </div>
+        </div>
+        <div class="help" onclick="helpMsg()">Help
+          <span class="help-popup" id="help-popup">You Can Send your query to <a href="mailto:kritishrivastav17@gmail.com">kritishrivastav17@gmail.com</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="survey-explain">
+      <img src="assets/teacher.png" alt="">
+      <div class="survey-bubble tri-right border round btm-left-in">
+        <div class="talktext">
+          <p>Hello there! <b>Surveys</b> are a very effective way to collect user opinion which is then used for serious stuff like product management and business plans! <br />But, here you will find some <b>random surveys</b> which are
+            designed for fun and fun alone!! </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mid">
+    <h2 class="mid-text">The available surveys are....</h2>
+    <div class="row1">
+      <div class="anime-survey"><a href="markup/anime-survey.html" target="_blank">
+          <h2>Anime and Manga </h2>
+        </a></div>
+    </div>
+    <div class="row2">
+      <div class="yoga-survey"><a href="markup/yoga-survey.html" target="_blank">
+          <h2> Yoga and Meditation </h2>
+        </a></div>
+      <div class="linux-survey"><a href="markup/linux-survey.html" target="_blank">
+          <h2>For Linux Users </h2>
+        </a></div>
+    </div>
+    <div class="row3">
+      <div class="food-survey">
+        <a href="markup/food-survey.html" target="_blank">
+          <h2>Food and Lifestyle </h2>
+        </a>
+      </div>
+      <div class="books-survey"><a href="markup/books-survey.html" target="_blank">
+          <h2>Books and much more... </h2>
+        </a></div>
+    </div>
+  </div>
+  <footer class="body-footer">
+    <div class="footer-layout">
+      <div class="footer-column fl1">
+        <ul>
+          <li>
+            <h3><u>Site info</u></h3>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">How it works?</a></li>
+        </ul>
+      </div>
+      <div class="footer-column fl2">
+        <ul>
+          <li>
+            <h3><u>Other Survey Sites</u></h3>
+          </li>
+          <li><a href="https://www.swagbucks.com/" target="_blank">SwagBucks</a></li>
+          <li><a href="https://www.opinionworld.in/" target="_blank">Opinion World</a></li>
+        </ul>
+      </div>
+      <div class="footer-column fl3">
+        <ul>
+          <li>
+            <h3><u>Contact</u></h3>
+          </li>
+          <li><a href="mailto:kritishrivastav17@gmail.com">kritishrivastav17@gmail.com</a></li>
+          <li><a href="tel:8345678907">+91 8345678907</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">
+      Copyright © 2021 Kriti Shrivastav |
+    </p>
+  </footer>
+</body>
+
+<script>
+  function helpMsg() {
+    var popup = document.getElementById("help-popup");
+    popup.classList.toggle("show");
+  }
+</script>
+
+</html>

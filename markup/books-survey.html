@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="../assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=PT+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/survey-styles.css">
+  <title>Books Survey</title>
+</head>
+
+<body style="background-image: url('../assets/books-bg2.jpeg'); background-size: cover; background-repeat: no-repeat;">
+  <div class="main-div">
+    <div class="question-container survey-info fade">
+      <p>Welcome. This is a short survey about books and reading.<br />Please click the next button to continue..</p>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Do you enjoy reading books or just reading in general?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:1, ansId:'Yes'})">Yes.</button>
+        <button class="option" onclick="addAnswer({quesId:1, ansId:'Yes, but mostly books'})">Yes, but mostly books.</button>
+        <button class="option" onclick="addAnswer({quesId:1, ansId:'No'})">No.</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Would you say, you are an avid reader?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'Yes, I love to read whatever I can get my hands on'})">Yes, I love to read whatever I can get my hands on.</button>
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'Not really, just the occasional readings'})">Not really, just the occasional readings.</button>
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'No'})">No.</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>What genre books do you prefer?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Action/Adventure'})">Action/Adventure</button>
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Biography/Autobiography'})">Biography/Autobiography</button>
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Fantasy novels'})">Fantasy novels</button>
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Supernatural'})">Supernatural</button>
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Horror'})">Horror</button>
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Crime/Mystery'})">Crime/Mystery</button>
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Psychological'})">Psychological</button>
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Motivational/Self-help'})">Motivational/Self-help</button>
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Other'})">Other</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>What is your take on the whole e-books vs Physical books battle?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:4, ansId:'Definetely physical books are more fun'})">Definitely physical books are more fun.</button>
+        <button class="option" onclick="addAnswer({quesId:4, ansId:'Depending on the availibility, I am fine with both'})">Depending on the availibility, I am fine with both.</button>
+        <button class="option" onclick="addAnswer({quesId:4, ansId:'I prefer e-books more'})">I prefer e-books more.</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>What is the most important detail for choosing a book?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Its length'})">Its length.</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Storyline'})">Storyline</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'I choose based on my preferred author'})">I choose based on my preferred author.</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Other'})">Other</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>On an average how many books do you read in a year?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'More than 15'})">More than 15</button>
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'More than 10'})">More than 7</button>
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'Between 5-7'})">About 3-7 books</button>
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'Less than 3'})">Less than 3</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Are you fine with knowing spoilers before reading a story?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'Absolutely not'})">Absolutely not.</button>
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'I am, as long as it is not a major one'})">I am, as long as it is not a major one.</button>
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'Yes, I don't much care, I will enjoy the story either way'})">Yes, I don't much care, I will enjoy the story either way.</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Do you enjoy fantasy novels? Have you read any of the titles like 'Harry Potter' or 'Percy Jackson Series' or 'Lord of the rings'?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:8, ansId:'Yes, I've read all of them'})">Yes, I've read all of them.</button>
+        <button class="option" onclick="addAnswer({quesId:8, ansId:'Yes, but I've only read a few'})">Yes, but I've only read a few.</button>
+        <button class="option" onclick="addAnswer({quesId:8, ansId:'No, I don't enjoy Fantasy novels'})">No, I don't enjoy Fantasy novels.</button>
+      </div>
+      <a class="next last" href="../index.html" onclick="submitMsg()"><span class="next-text">Submit</span></a>
+  </div>
+  <script type="text/javascript" src="../scripts/behav.js"></script>
+
+</body>
+
+</html>

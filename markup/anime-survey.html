@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="../assets/favicon.ico">
+  <link rel="stylesheet" href="../styles/survey-styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <title>Manga and Anime Survey</title>
+
+</head>
+
+<body style="background-image: url('../assets/anime-bg2.jpeg'); background-size: cover; background-repeat: no-repeat;">
+  <div class="main-div">
+    <div class="question-container survey-info fade">
+      <p>Welcome. This is a short survey based on Manga and Anime.<br />Please click the next button to continue..</p>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Are you familiar with the world of manga and anime?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:1, ansId:'Yes'})">Yes</button>
+        <button class="option" onclick="addAnswer({quesId:1, ansId:'No'})">No</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>How often do you watch anime?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'Everyday for a few hours'})">Everyday for a few hours.</button>
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'A few days a week'})">A few days a week.</button>
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'A few hours per month'})">A few hours per month.</button>
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'I only watch anime when I find a good one'})">I only watch anime when I find a good one.</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>What matters most to you in an anime?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Storyline'})">Storyline</button>
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Characters'})">Characters</button>
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Music'})">Music</button>
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Art/Animation'})">Art/Animation</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Do you watch your anime subbed or dubbed?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:4, ansId:'Subbed'})">Subbed</button>
+        <button class="option" onclick="addAnswer({quesId:4, ansId:'Dubbed'})">Dubbed</button>
+        <button class="option" onclick="addAnswer({quesId:4, ansId:'Either is fine'})">Either is fine.</button>
+        <button class="option" onclick="addAnswer({quesId:4, ansId:'I understand the language'})">I understand the language.</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Which genre do you prefer?</p>
+      </div>
+      <div class="option-container 2-col-grid">
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Action'})">Action</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Adventure'})">Adventure</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Comedy'})">Comedy</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Drama'})">Drama.</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Slice of life'})">Slice of life</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Fantasy'})">Fantasy</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Supernatural'})">Supernatural</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Horror'})">Horror</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Mystery'})">Mystery</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Psychological'})">Psychological</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Romance'})">Romance</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Sci-fi'})">Sci-fi</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Do you prefer reading manga or directly watching its anime adaptation?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'Definitely reading manga first'})">Definitely reading manga first.</button>
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'Either one is fine'})">Either one is fine.</button>
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'Watching anime'})">Watching anime.</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class=" survey-info question-container fade">
+      <div class="question">
+        <p>Here is a section specifically based on anime</p>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Did you watch bleach? Was it worth it?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'Yes, I loved it!'})">Yes, I loved it!.</button>
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'It was okay'})">It was okay.</button>
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'No, I did not watch it'})">No, I did not watch it.</button>
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'I am planning to watch it in the near future'})">I am planning to watch it in the near future.</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Did you ever attempt to watch One piece?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:8, ansId:'Yes, and I finished it'})">Yes, and I finished it.</button>
+        <button class="option" onclick="addAnswer({quesId:8, ansId:'Yes, but I'am still trying to catch up'})">Yes, but I'am still trying to catch up.</button>
+        <button class="option" onclick="addAnswer({quesId:8, ansId:'No, its way too many episodes for me'})">No, its way too many episodes for me.</button>
+        <button class="option" onclick="addAnswer({quesId:8, ansId:'No, but I do plan on watching it'})">No, but I do plan on watching it.</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Which two character's fight would you like to see the most?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:9, ansId:'Goku vs. Saitama'})">Goku vs. Saitama.</button>
+        <button class="option" onclick="addAnswer({quesId:9, ansId:'Ryoko Matoi vs. Maka & Soul Eater'})">Ryoko Matoi vs. Maka & Soul Eater</button>
+        <button class="option" onclick="addAnswer({quesId:9, ansId:'Erza Scarlet vs. Zoro'})">Erza Scarlet vs. Zoro</button>
+        <button class="option" onclick="addAnswer({quesId:9, ansId:'Light Yagami vs. Lelouch Lamperouge'})">Light Yagami vs. Lelouch Lamperouge</button>
+        <button class="option" onclick="addAnswer({quesId:9, ansId:'Rock Lee vs. Speed-o'-Sound Sonic'})">Rock Lee vs. Speed-o'-Sound Sonic</button>
+        <button class="option" onclick="addAnswer({quesId:9, ansId:'Monkey D. Luffy vs. Natsu Dragoneel'})">Monkey D. Luffy vs. Natsu Dragoneel</button>
+      </div>
+      <a class="next last" href="../index.html" onclick="submitMsg()"><span class="next-text">Submit</span></a>
+    </div>
+  </div>
+  <script type="text/javascript" src="../scripts/behav.js"></script>
+
+</body>
+
+</html>

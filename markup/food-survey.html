@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="../assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=PT+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/survey-styles.css">
+  <title>Food&Lifestyle Survey</title>
+</head>
+
+<body style="background-image: url('../assets/food-bg.jpeg'); background-size: cover; background-repeat: no-repeat;">
+  <div class="main-div">
+    <div class="question-container survey-info fade">
+      <p>Welcome. This is a short survey based on food consumption and eating habits.<br />Please click the next button to continue..</p>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>How many meals do you have in a day?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:1, ansId:'Three meals a day'})">Three meals a day</button>
+        <button class="option" onclick="addAnswer({quesId:1, ansId:'Two meals in a day'})">Two meals in a day</button>
+        <button class="option" onclick="addAnswer({quesId:1, ansId:'One meal, everyday'})">One meal, everyday</button>
+
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Are you a vegetarian or a non-vegetarian?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'Vegetarian'})">Vegetarian</button>
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'I just don't eat meat'})">I just don't eat meat</button>
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'Non-Vegetarian'})">Non-Vegetarian</button>
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'Other'})">Other</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Do you or your family members regularly cook at home?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Yes, we almost always have home cooked food'})">Yes, we almost always have home cooked food.</button>
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Yes, but we also go out to eat often'})">Yes, but we also go out to eat often.</button>
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'No, I mostly eat out or order from somewhere'})">No, I mostly eat out or order from somewhere.</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Do you consume dietary supplements regularly?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:4, ansId:'No'})">No</button>
+        <button class="option" onclick="addAnswer({quesId:4, ansId:'Yes, but not that often'})">Yes, but not that often</button>
+        <button class="option" onclick="addAnswer({quesId:4, ansId:'Yes, I regularly consume supplements'})">Yes, I regularly consume supplements</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Have you ever tried intermittent fasting?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Yes, I practice fasting regularly'})">Yes, I practice fasting regularly</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Yes, I tried it a few times'})">Yes, I tried it a few times.</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'No, I don't fast'})">No, I don't fast.</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Which factors influence your food preference?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'Mainly based on health Benefits'})">Mainly based on health Benefits</button>
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'Nutrition and taste factor'})">Nutrition and taste factor</button>
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'Availibility and ease of cooking'})">Availibility and ease of cooking</button>
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'Based on taste'})">Based on taste</button>
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'Other'})">Other</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>How many glasses of water do you consume in a day?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'8-10 glasses per day'})">8-10 glasses per day</button>
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'3-5 glasses per day'})">3-5 glasses per day</button>
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'More than 10 glasses'})">More than 10 glasses</button>
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'Less than 3 glasses'})">Less than 3 glasses</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Do you consume alcohol or alhohol based drinks regularly?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:8, ansId:'No, I don't drink'})">No, I don't drink</button>
+        <button class="option" onclick="addAnswer({quesId:8, ansId:'I only drink occasionaly'})">I only drink occasionaly</button>
+        <button class="option" onclick="addAnswer({quesId:8, ansId:'Yes, I drink regularly'})">Yes, I drink regularly</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Did you ever consider shifting to healthier alternatives for your everyday food?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:9, ansId:'Yes, I've already replaced a lot of things'})">Yes, I've already replaced a lot of things.</button>
+        <button class="option" onclick="addAnswer({quesId:9, ansId:'Yes, I am considering it'})">Yes, I am considering it.</button>
+        <button class="option" onclick="addAnswer({quesId:9, ansId:'No'})">No</button>
+      </div>
+      <a class="next last" href="../index.html" onclick="submitMsg()"><span class="next-text">Submit</span></a>
+    </div>
+  </div>
+  <script type="text/javascript" src="../scripts/behav.js"></script>
+
+</body>
+
+</html>

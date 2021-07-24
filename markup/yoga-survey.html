@@ -1,0 +1,117 @@
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="../assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=PT+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/survey-styles.css">
+  <title>Yoga Survey</title>
+</head>
+
+<body style="background-image: url('../assets/yoga-bg.jpeg'); background-size: cover; background-repeat: no-repeat;">
+  <div class="main-div">
+    <div class="question-container survey-info fade">
+      <p>Welcome. This is a short survey based on yoga.<br />Please click the next button to continue..</p>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Are you a yoga practitioner?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:1, ansId:'Yes, I do yoga regularly'})">Yes, I do yoga regularly</button>
+        <button class="option" onclick="addAnswer({quesId:1, ansId:'Yes, but not consistently'})">Yes, but not consistently</button>
+        <button class="option" onclick="addAnswer({quesId:1, ansId:'No, I don't practice yoga'})">No, I don't practice yoga</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Do you see yoga as your path to spiritual growth or just as a physical exercise?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'Part of personal spiritual growth'})">Part of personal spiritual growth</button>
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'Mental and physical growth'})">Mental and physical growth</button>
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'Just physical exercise'})">Just physical exercise</button>
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'All of the above'})">All of the above</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Do you teach Yoga? If yes, then how long have you been teaching?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Yes, I've taught yoga for over 5 years'})">Yes, I've taught yoga for over 5 years</button>
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Yes, I've taught yoga for over 1 year'})">Yes, I've taught yoga for over a year</button>
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Yes, but I recently started teaching'})">Yes, but I recently started teaching</button>
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'No, I don't teach yoga'})">No, I don't teach yoga</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>What do you think of the declation of 'International Yoga Day'? Do you think it'll help with large scale awareness of yoga?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:4, ansId:'Yes, I think it is a very good and essential step'})">Yes, I think it is a very good and essential step.</button>
+        <button class="option" onclick="addAnswer({quesId:4, ansId:'Maybe'})">Maybe</button>
+        <button class="option" onclick="addAnswer({quesId:4, ansId:'No, I don't think it'll help'})">No, I don't think it'll help</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>How old were you, when you became aware of yoga?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'About 10-12 years old'})">About 10-12 years old</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Between 12 to 18 years old'})">Between 12 to 18 years old</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Above 18 years'})">Above 18 years</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>How many hours a day do you practice yoga?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'More than 3 hours'})">More than 3 hours</button>
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'About 1-3 hours'})">About 1-3 hours</button>
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'Less than half an hour'})">Less than half an hour</button>
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'I don't practice yoga'})">I don't practice yoga</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>How were you introduced to yoga?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'Through School/College'})">Through School/College.</button>
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'Friends/Colleagues'})">Friends/Colleagues.</button>
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'Through family members'})">Through family members.</button>
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'Through online social-media'})">Through online social-media.</button>
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'Other'})">Other.</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Based on your experience, would you reccomend Yoga to others?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:8, ansId:'Yes'})">Yes</button>
+        <button class="option" onclick="addAnswer({quesId:8, ansId:'No'})">No</button>
+        <button class="option" onclick="addAnswer({quesId:8, ansId:'I don't know'})">I don't know</button>
+      </div>
+      <a class="next last" href="../index.html" onclick="submitMsg()"><span class="next-text">Submit</span></a>
+    </div>
+  </div>
+  <script type="text/javascript" src="../scripts/behav.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="../assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=PT+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/survey-styles.css">
+  <title>Linux Survey</title>
+</head>
+
+<body style="background-image: url('../assets/linux-bg2.jpeg'); background-size: cover; background-repeat: no-repeat;">
+  <div class="main-div">
+    <div class="question-container survey-info fade">
+      <p>Welcome. This is a short survey for Linux users.<br />Please click the next button to continue..</p>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Do you use Linux?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:1, ansId:'Yes'})">Yes</button>
+        <button class="option" onclick="addAnswer({quesId:1, ansId:'No'})">No</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Whcich Linux do you use?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'Arch'})">Arch</button>
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'Debian'})">Debian</button>
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'Free BSD'})">Free BSD</button>
+        <button class="option" onclick="addAnswer({quesId:2, ansId:'Other'})">Other</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Did you ever build a linux by yourself from binaries?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'Yes'})">Yes</button>
+        <button class="option" onclick="addAnswer({quesId:3, ansId:'No'})">No</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Which is your prefferable distro?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:4, ansId:'Ubuntu'})">Ubuntu</button>
+        <button class="option" onclick="addAnswer({quesId:4, ansId:'Arch'})">Arch</button>
+        <button class="option" onclick="addAnswer({quesId:4, ansId:'Manjaro'})">Manjaro</button>
+        <button class="option" onclick="addAnswer({quesId:4, ansId:'Mint'})">Mint</button>
+        <button class="option" onclick="addAnswer({quesId:4, ansId:'Other'})">Other</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Do you use tiling Window Manager?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Yes'})">Yes</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'No'})">No</button>
+        <button class="option" onclick="addAnswer({quesId:5, ansId:'Never heard about it'})">Never heard about it.</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Which is your preferred Window Manager?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'i3'})">i3</button>
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'Awesome'})">Awesome</button>
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'Qtile'})">Qtile</button>
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'Openbox'})">Openbox</button>
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'dwm'})">dwm</button>
+        <button class="option" onclick="addAnswer({quesId:6, ansId:'Other'})">Other</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>How often do you use Linux?</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'Primarily'})">Primarily</button>
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'Sometimes'})">Sometimes</button>
+        <button class="option" onclick="addAnswer({quesId:7, ansId:'Only on servers'})">Only on servers</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>Rate Linux out of 5 based on your using experience.</p>
+        <p class="note">(1: least favourable && 5:most favourable)</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:8, ansId:'1'})">1</button>
+        <button class="option" onclick="addAnswer({quesId:8, ansId:'2'})">2</button>
+        <button class="option" onclick="addAnswer({quesId:8, ansId:'3'})">3</button>
+        <button class="option" onclick="addAnswer({quesId:8, ansId:'4'})">4</button>
+        <button class="option" onclick="addAnswer({quesId:8, ansId:'5'})">5</button>
+      </div>
+      <a class="next" onclick="plusSlides(1)"><span class="next-text">&#10095;</span></a>
+    </div>
+    <div class="question-container fade">
+      <div class="question">
+        <p>How likely are you to reccomend using Linux to another user?</p>
+        <p class="note">(Select a rating from 1 to 5)</p>
+      </div>
+      <div class="option-container">
+        <button class="option" onclick="addAnswer({quesId:9, ansId:'1'})">1</button>
+        <button class="option" onclick="addAnswer({quesId:9, ansId:'2'})">2</button>
+        <button class="option" onclick="addAnswer({quesId:9, ansId:'3'})">3</button>
+        <button class="option" onclick="addAnswer({quesId:9, ansId:'4'})">4</button>
+        <button class="option" onclick="addAnswer({quesId:9, ansId:'5'})">5</button>
+      </div>
+      <a class="next last" href="../index.html" onclick="submitMsg()"><span class="next-text">Submit</span></a>
+    </div>
+  </div>
+  <script type="text/javascript" src="../scripts/behav.js"></script>
+
+</body>
+
+</html>
