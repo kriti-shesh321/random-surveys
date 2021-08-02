@@ -470,27 +470,27 @@ h1 {
   }
 
   .navBar {
-    font-size: 125%;
+    font-size: 115%;
     width: auto;
     display: flex;
     margin-top: 5%;
-    padding: 3%;
+    padding: 2%;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.1);
   }
 
   .navBar .dropdown {
     margin: 0 20px 0 0;
-    padding: 5px 2px 3px 2px;
+    padding-bottom: 7px;
     text-align: center;
-    height: 30px;
+    height: 20px;
   }
 
   .navBar .help {
     margin: 0 0 0 20px;
-    padding: 5px 8px 3px 8px;
+    padding: 2px 8px 5px 8px;
     text-align: center;
-    height: 30px;
+    height: 20px;
   }
 
   .survey-explain {
@@ -609,6 +609,7 @@ h1 {
   .copyright {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 8px 0 5px 0;
+    font-size: 1rem;
   }
 }
 
@@ -635,7 +636,7 @@ h1 {
   }
 
   .navBar {
-    font-size: 125%;
+    font-size: 100%;
     width: auto;
     display: flex;
     margin-top: 5%;
@@ -646,16 +647,19 @@ h1 {
 
   .navBar .dropdown {
     margin: 0 20px 0 0;
-    padding: 1px 1px 2px 1px;
+    padding: 1px 2px 3px;
+    height: 20px;
     text-align: center;
-    height: 30px;
+    width: auto;
+    border: none;
   }
 
   .navBar .help {
     margin: 0 0 0 20px;
-    padding: 3px 8px 1px 8px;
+    padding: 3px 8px 0 8px;
     text-align: center;
-    height: 30px;
+    height: 20px;
+    border: none;
   }
 
   .survey-explain {
@@ -668,7 +672,7 @@ h1 {
   }
 
   .survey-explain img {
-    height: 270px;
+    height: 200px;
     margin: 0;
     display: inline-block;
     position: absolute;
@@ -693,6 +697,10 @@ h1 {
     line-height: normal;
     font-size: 100%;
     font-family: "Benne", serif;
+  }
+
+  .survey-explain-text {
+    display: none;
   }
 
   .top::before, .top::after {
@@ -730,6 +738,10 @@ h1 {
 
   .mid h2 {
     padding: 2% 5px;
+  }
+
+  .mid a {
+    font-size: 0.88rem;
   }
 
   .books-survey h2 {
